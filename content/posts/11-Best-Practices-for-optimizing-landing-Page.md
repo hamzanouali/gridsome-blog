@@ -2,8 +2,9 @@
 title: 11 Best Practices For Optimizing Landing Pages
 date: 2020-08-12
 published: true
-tags: ['Markdown', 'Cover Image']
+tags: ['landing page', 'optimization', 'pricing table', 'call to action', 'form', 'social proof', 'a/b testing', 'inputs']
 series: false
+cover_image: ./images/post-1/landing-page-hero-headline.png
 canonical_url: false
 description: "A landing page is a common asset and standalone web page, created specifically for an advertising or marketing campaign. It’s where a visitor lands after they click on a link in an email, or from Google, Bing, Instagram, Twitter, YouTube, Facebook,  or similar places on the web."
 ---
@@ -18,13 +19,13 @@ That said, let’s jump to 11 Best Practices for optimizing a landing page :
 
 ## 1. Optimize headlines and taglines
 
-![Optimize headlines and taglines](https://i.imgur.com/TuzHUgY.png)
+![Optimize headlines and taglines](./images/post-1/landing-page-hero-headline.png)
 
 Your landing pages have to be very clear about your product and attract your visitor’s attention from the start. People’s attention span is just about [8 - 9 seconds,](http://www.quicksprout.com/2013/08/08/this-is-your-brain-on-visualization/) so you have to make sure you tell all the important stuff first and tell it as fast as possible to get more clicks, sales, and conversions.
 
 ## 2. Keep all important information above the fold
 
-![Keep all important information above the fold](https://i.imgur.com/Pc6JZOB.png)
+![Keep all important information above the fold](./images/post-1/hero-section-in-landing-page.png)
 
 The word “above the fold” it more often describes what’s visible on a screen before scrolling down. It’s valuable and you will want to make the most of it. Make sure you have landing page elements that will convince your potential customers to convert. Such :
 
@@ -35,13 +36,13 @@ The word “above the fold” it more often describes what’s visible on a scre
 
 ## 3. Different payment options
 
-![Different payment options](https://i.imgur.com/aHK36hX.png)
+![Different payment options](./images/post-1/hero-section-in-landing-page.png)
 
 Nowadays, landing pages needs to support the most common payment options. Many of your visitors might abandon their transactions if their preferred payment option isn’t or appears not to be available.
 
 ## 4. Choosing Monthly vs Annual Subscriptions
 
-![Choosing Monthly vs Annual Subscriptions](https://i.imgur.com/tIILoba.png)
+![Choosing Monthly vs Annual Subscriptions](./images/post-1/payment-options-like-visa-and-master-card.png)
 
 Customer retention is the most important key to profits. The lower barrier and flexibility to the entry of monthly subscription is crucial for acquiring new users, but you can’t deny that if customers bail out on your product services, you won’t see the money you need to survive, let alone prosper and grow your business.
 
