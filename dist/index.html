@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Hotjar Tracking Code for https://frontendor.com -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1836985, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117769569-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117769569-1');
+  </script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/preview/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/preview/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/preview/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/preview/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/preview/images/favicon/safari-pinned-tab.svg" color="#6142df">
+  <meta name="msapplication-TileColor" content="#6142df">
+  <meta name="theme-color" content="#6142df">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+
+  <title>Frontendor | UI Library For Landing Pages</title>
+  <meta name="title" content="Frontendor | UI Library For Landing Pages">
+  <meta name="description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frontendor.com">
+  <meta property="og:title" content="Frontendor | UI Library For Landing Pages">
+  <meta property="og:description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+  <meta property="og:image" content="/preview/images/BKK.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://frontendor.com">
+  <meta property="twitter:title" content="Frontendor | UI Library For Landing Pages">
+  <meta property="twitter:description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+  <meta property="twitter:image" content="/preview/images/BKK.png">
+</head>
+
+<body>
+
+  <!--Offer Alert ============================== -->
+  <div class="offer-alert">
+    <div class="offer-alert__container container">
+      <a href="https://gum.co/f50" class="offer-alert__btn">Buy Now 49$</a>
+      <span>200 spots left at this price <span style="text-decoration: line-through;">100$</span></span>
+    </div>
+  </div>
+
+  <!--1. Hero =================================== -->
+  <header class="hero container-fluid border-bottom">
+    <div class="hero__content container mx-auto">
+      <nav class="hero-nav container px-0 mx-auto">
+        <ul class="nav w-100 list-unstyled align-items-center p-0">
+          <li class="hero-nav__item ml-lg-0">
+            <img class="hero-nav__logo" src="./media/logo-shape.svg" alt="our logo">
+          </li>
+          <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+            <ul
+              class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+              <!-- YOU CAN UNCOMMENT THIS -->
+              <!--
+                  <li class="hero-nav__item">
+                    <a href="#!" class="hero-nav__link">Product</a>
+                  </li>
+                -->
+              <li class="hero-nav__item">
+                <a href="#the-package" class="hero-nav__link">Package</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#features" class="hero-nav__link">Features</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#pricing" class="hero-nav__link">Pricing</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#faq" class="hero-nav__link">FAQ</a>
+              </li>
+              <li class="flex-grow-1">
+                <ul
+                  class="nav nav--lg-side flex-column-reverse flex-lg-row-reverse list-unstyled align-items-center p-0">
+                  <!-- <li class="hero-nav__item">
+                    <a href="#get-in-touch" class="btn btn-primary">
+                      Get In Touch
+                    </a>
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="ft-menu__close-btn animated">
+              <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </li>
+          <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="text-center px-2">
+              <i class="fas fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero__body col-lg-7 px-0">
+        <span class="hero__tag d-block mb-3">
+          <span class="hero__tag-icon">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bootstrap-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+            </svg>
+          </span>
+          <span class="hero__tag-text mx-1">
+            USING BOOTSTRAP
+          </span>
+        </span>
+        <h1 class="hero__title mb-3">
+          CREATE BEAUTIFUL
+          LANDING PAGES BY
+          <span class="highlight">COPY-PASTE</span>
+        </h1>
+        <p class="hero__paragraph mb-5">
+          Frontendor is a library of reusable HTML templates and blocks to help you
+          build beautiful and professional landing pages quickly and easily by COPY-PASTE.
+        </p>
+        <div class="hero__btns-container">
+          <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="/preview">
+            <span class="mx-1">
+              Preview All
+            </span>
+            <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+            </svg>
+          </a>
+        </div>
+        <p style="opacity: .8;font-size: .87rem;font-weight: 600;" class="d-block mt-5 mb-4">
+          DESIGNED AND DEVELOPED BY
+        </p>
+        <div class="row mx-0 px-0 justify-content-start">
+          <div class="d-flex align-items-center mb-2 mb-lg-0">
+            <img class="person__avatar" src="./media/ali.jpg">
+            <div class="px-3 d-flex flex-column align-items-start">
+              <span class="person__name">Ali Boukeroui</span>
+              <a href="https://twitter.com/Unity_Ninja" target="__blank" class="person__info my-1">UX/UI DESIGNER</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mx-lg-1">
+            <img class="person__avatar" src="./media/hamzaimage.jpg">
+            <div class="px-3 d-flex flex-column align-items-start">
+              <span class="person__name">Hamza Nouali</span>
+              <a href="https://twitter.com/hamza__nouali" target="__blank" class="person__info my-1">FRONT-END DEV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__row d-block d-lg-flex row">
+      <div class="hero__empty-column col-lg-7">
+      </div>
+      <div class="hero__image-column col-lg-5" style="background-image: url('./media/BLOCKS GRID.jpg')">
+      </div>
+    </div>
+  </header>
+
+  <!--2. The Package ============================== -->
+  <div id="the-package" class="block-lp-1-parent overflow-hidden">
+    <div id="package" class="block-lp-1 space-between-blocks">
+      <div class="container">
+        <!-- HEADER -->
+        <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+          <h1 class="block__title mb-3">
+            50+ BLOCKS & 4 TEMPLATES
+            TO SAVE 🕒 AND 🤑
+          </h1>
+          <p class="block-lp-1__paragraph mb-0">
+            This package will save you hours of designing and coding. Get unlimited personal & commercial use
+            for a one time payment.
+          </p>
+          <div class="text-center mt-5">
+            <a class="btn btn-secondary" href="/preview">
+              <span class="mx-1">
+                Preview All
+              </span>
+              <svg class="mx-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="row px-2 align-items-center justify-content-center">
+          <div class="col-lg-6 mb-3 mb-lg-4">
+            <div onclick="openPreview('./preview/blocks/1. Hero (8)/Block-3/2. block.html')"
+              class="block-sample block-sample--free">
+              <div class="block-sample__header">
+                <span class="block-sample__name flex-grow-1">HERO WITH FORM</span>
+                <button class="block-sample__cta">
+                  <span class="mx-lg-2">LIVE PREVIEW</span>
+                  <svg class="d-none d-lg-inline bi bi-arrow-right" width="1.2em" height="1.2em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                  </svg>
+                </button>
+              </div>
+              <div style="background-color: #ff5858" class="block-sample__image-container">
+                <img class="block-sample__image" data-src="./preview/blocks/1. Hero (8)/images/Hero3_S2.png"
+                  alt="Free HTML block of hero with image">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-lg-4">
+            <div onclick="openPreview('./preview/blocks/1. Hero (8)/Block-1/1. block.html')"
+              class="block-sample block-sample--free">
+              <div class="block-sample__header">
+                <span class="block-sample__name flex-grow-1">HERO WITH IMAGE</span>
+                <a href="#!" class="block-sample__cta">
+                  <span class="mx-lg-2">LIVE PREVIEW</span>
+                  <svg class="d-none d-lg-inline bi bi-arrow-right" width="1.2em" height="1.2em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                  </svg>
+                </a>
+              </div>
+              <div style="background-color: #5884ff" class="block-sample__image-container">
+                <img class="block-sample__image" data-src="./preview/blocks/1. Hero (8)/images/Hero1.png"
+                  alt="Free HTML block of hero with text only">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 style="line-height: 1.7" class="my-5 text-center">
+          GET STARTED FASTER BY GETTING ALL OF OUR READY-TO-USE TEMPLATES
+        </h6>
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <div tabindex="1" onclick="openPreview('./preview/blocks/0. Templates/template-3/index.html')"
+            class="template-preview">
+            <div class="template-preview__img-container">
+              <img class="w-100" src="./preview/blocks/0. Templates/service template.jpg" alt="">
+              <span class="template-preview__btn">
+                Live Preview
+              </span>
+            </div>
+          </div>
+          <div tabindex="1" onclick="openPreview('./preview/blocks/0. Templates/template-4/index.html')"
+            class="template-preview">
+            <div class="template-preview__img-container">
+              <img class="w-100" src="./preview/blocks/0. Templates/Reading-SaaS-Template.jpg" alt="">
+              <span class="template-preview__btn">
+                Live Preview
+              </span>
+            </div>
+          </div>
+          <div tabindex="1" onclick="openPreview('./preview/blocks/0. Templates/template-2/index.html')"
+            class="template-preview">
+            <div class="template-preview__img-container">
+              <img class="w-100" src="./preview/blocks/0. Templates/SaaS Template 2.jpg" alt="">
+              <span class="template-preview__btn">
+                Live Preview
+              </span>
+            </div>
+          </div>
+          <div tabindex="1" onclick="openPreview('./preview/blocks/0. Templates/template-1/index.html')"
+            class="template-preview">
+            <div class="template-preview__img-container">
+              <img class="w-100" src="./preview/blocks/0. Templates/watch template.jpg" alt="">
+              <span class="template-preview__btn">
+                Live Preview
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="svg-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.3 106.742">
+      <path fill="currentColor"
+        d="M1366.3 40.982q-183.405 50.177-274.4 34.984c-90.992-15.193-181.984-45.58-272.975-35.419-90.993 9.78-181.984 61.058-272.976 65.806S363.967 71.218 272.976 50.612C181.983 30.387 90.991 30.387 45.495 30.387L0 26.33V0h1366.3z"
+        opacity="0.149" />
+      <path fill="currentColor"
+        d="M0 40.982q183.405 50.177 274.4 34.984c90.992-15.193 181.984-45.58 272.975-35.419 90.993 9.78 181.984 61.058 272.976 65.806s181.984-35.135 272.975-55.741c90.992-20.226 181.984-20.226 227.48-20.226h45.5V0H0z"
+        opacity="0.296" />
+      <path fill="currentColor"
+        d="M0 27.041q183.405 33.124 274.4 23.1c90.989-10.031 181.981-30.086 272.972-23.379 90.993 6.454 181.984 40.3 272.976 43.431S1002.332 47 1093.324 33.4c90.992-13.35 181.984-13.35 227.48-13.35h45.5V0H0z" />
+    </svg>
+  </div>
+
+  <!--3. Feature 1 ================================ -->
+  <div id="features" class="block-8 space-between-blocks">
+    <div class="container">
+      <div class="row px-2 align-items-center flex-column-reverse flex-lg-row justify-content-center">
+        <!-- CONTENT -->
+        <div class="col-lg-5">
+          <p class="block__pre-title mb-2">Fully customizable</p>
+          <h1 class="block__title mb-3">
+            Neat code, easy to customize
+          </h1>
+          <p class="block__paragraph mb-0">
+            Everything designed and coded to be easy to customize. Customize
+            your fonts, colors and spacing in 5 min with CSS variables.
+          </p>
+        </div>
+        <!-- IMAGE -->
+        <div class="col-lg-5 my-5 my-lg-0 text-center">
+          <img src="./media/EasyCustomize.gif" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--4. Feature 2 ================================ -->
+  <div class="block-8 space-between-blocks pt-0">
+    <div class="container">
+      <div class="row px-2 align-items-center flex-column-reverse flex-lg-row-reverse justify-content-center">
+        <!-- CONTENT -->
+        <div class="col-lg-5">
+          <p class="block__pre-title mb-2">Reusable Code</p>
+          <h1 class="block__title mb-3">
+            Separate blocks, easy to integrate
+          </h1>
+          <p class="block__paragraph mb-0">
+            Each block has its own HTML & CSS, COPY-PASTE these blocks to any existing codebase without conflicts.
+          </p>
+        </div>
+        <!-- IMAGE -->
+        <div class="col-lg-5 my-5 my-lg-0 text-center">
+          <img src="./media/EasyIntegrate.gif" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--5. Group Of Features ========================= -->
+  <div class="block-6 space-between-blocks pt-0">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <h1 style="color: var(--primary);" class="block__title mb-3">6 more reasons why you should invest in this
+          package</h1>
+      </div>
+      <div class="row px-2 justify-content-center">
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-4 mx-lg-2 mb-4 mb-lg-0">
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hourglass-split" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0c0 .701.478 1.236 1.011 1.492A3.5 3.5 0 0 1 11.5 13s-.866-1.299-3-1.48V8.35z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">
+                Save time, don't develop everything from scratch.
+              </h3>
+            </div>
+          </div>
+          <div class="card-2 d-flex pt-lg-4">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bezier" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                  <path
+                    d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">Get a modern look without having to rely on a designer.</h3>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gem" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495l5.062-.005L8 13.366 5.47 5.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l2.92-.003 2.193 6.82L1.5 5.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">Excellent user experience in both mobile & desktop.</h3>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-4 mx-lg-2">
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-seam" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">Suitable for SaaS, services, newsletters and so much more.</h3>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart-line" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
+                  <path fill-rule="evenodd" d="M0 14.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">Design based on proven marketing & sales principles.</h3>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z" />
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-0">
+                Not satisfied, money back guarentee.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--6. Testimonials ============================== -->
+  <div id="testimonials" class="block-20-parent overflow-hidden">
+    <svg class="svg-shape" style="transform: rotateX(-180deg); margin-bottom: -1px" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1366.3 106.742">
+      <path fill="currentColor"
+        d="M1366.3 40.982q-183.405 50.177-274.4 34.984c-90.992-15.193-181.984-45.58-272.975-35.419-90.993 9.78-181.984 61.058-272.976 65.806S363.967 71.218 272.976 50.612C181.983 30.387 90.991 30.387 45.495 30.387L0 26.33V0h1366.3z"
+        opacity="0.149" />
+      <path fill="currentColor"
+        d="M0 40.982q183.405 50.177 274.4 34.984c90.992-15.193 181.984-45.58 272.975-35.419 90.993 9.78 181.984 61.058 272.976 65.806s181.984-35.135 272.975-55.741c90.992-20.226 181.984-20.226 227.48-20.226h45.5V0H0z"
+        opacity="0.296" />
+      <path fill="currentColor"
+        d="M0 27.041q183.405 33.124 274.4 23.1c90.989-10.031 181.981-30.086 272.972-23.379 90.993 6.454 181.984 40.3 272.976 43.431S1002.332 47 1093.324 33.4c90.992-13.35 181.984-13.35 227.48-13.35h45.5V0H0z" />
+    </svg>
+    <div class="block-20 space-between-blocks">
+      <div class="container">
+        <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+          <h1 class="block__title mb-0">
+            <span class="person__rating" style="
+            font-size: 1rem;
+        ">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+          </h1>
+          <p class="block__paragraph mb-3">
+            We're rated 5/5 stars from different people on Gumroad
+          </p>
+          <h1 class="block__title mb-0">FOLKS WHO LOVED OUR PACKAGE ❤️</h1>
+        </div>
+        <div class="row px-2 pt-4">
+          <div class="col-lg-4">
+            <div class="testimonial-card-1 mb-5">
+              <p class="testimonial-card-1__paragraph mb-3">
+                It's a great way to save time by not developing everything from scratch and as a baseline for a more
+                customization
+                website.
+              </p>
+              <div class="person">
+                <div class="mb-2">
+                  <img class="person__avatar--block-20" src="./preview/images/sunglass.jpg">
+                </div>
+                <div class="flex-grow-1 d-flex flex-column">
+                  <span class="person__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="person__name my-1">Orlie</span>
+                  <a href="https://twitter.com/sunglassesface" target="__blank" class="person__info">@sunglassesface</a>
+                </div>
+              </div>
+              <span class="testimonial-card-1__quote-symbol">
+                <i class="fas fa-quote-left"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-card-1 mb-5">
+              <p class="testimonial-card-1__paragraph mb-3">
+                I was looking for bootstrap landing page code snippets for one of my projects. After some google
+                searches, I found
+                Frontendor's code blocks. I was amazed by the quality of the code snippets.
+              </p>
+              <div class="person">
+                <div class="mb-2">
+                  <img class="person__avatar--block-20" src="./preview/images/tobias_lei.jpg">
+                </div>
+                <div class="flex-grow-1 d-flex flex-column">
+                  <span class="person__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="person__name my-1">Tobias Lei</span>
+                  <a href="https://www.21yunbox.com/" target="__blank" class="person__info">Founder at 21YunBox</a>
+                </div>
+              </div>
+              <span class="testimonial-card-1__quote-symbol">
+                <i class="fas fa-quote-left"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-card-1 mb-5">
+              <p class="testimonial-card-1__paragraph mb-3">
+                I like how Frontendor takes care of the landing/product page, so startups can focus on their core
+                offering without
+                worrying about the UX of their landing page. That's appreciated!
+              </p>
+              <div class="person">
+                <div class="mb-2">
+                  <img class="person__avatar--block-20" src="./preview/images/joshua.jpg">
+                </div>
+                <div class="flex-grow-1 d-flex flex-column">
+                  <span class="person__rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="person__name my-1">Joshua Mahlombe</span>
+                  <a href="https://twitter.com/MahlombeIII" target="__blank" class="person__info">@MahlombeIII</a>
+                </div>
+              </div>
+              <span class="testimonial-card-1__quote-symbol">
+                <i class="fas fa-quote-left"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="svg-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.3 106.742">
+      <path fill="currentColor"
+        d="M1366.3 40.982q-183.405 50.177-274.4 34.984c-90.992-15.193-181.984-45.58-272.975-35.419-90.993 9.78-181.984 61.058-272.976 65.806S363.967 71.218 272.976 50.612C181.983 30.387 90.991 30.387 45.495 30.387L0 26.33V0h1366.3z"
+        opacity="0.149" />
+      <path fill="currentColor"
+        d="M0 40.982q183.405 50.177 274.4 34.984c90.992-15.193 181.984-45.58 272.975-35.419 90.993 9.78 181.984 61.058 272.976 65.806s181.984-35.135 272.975-55.741c90.992-20.226 181.984-20.226 227.48-20.226h45.5V0H0z"
+        opacity="0.296" />
+      <path fill="currentColor"
+        d="M0 27.041q183.405 33.124 274.4 23.1c90.989-10.031 181.981-30.086 272.972-23.379 90.993 6.454 181.984 40.3 272.976 43.431S1002.332 47 1093.324 33.4c90.992-13.35 181.984-13.35 227.48-13.35h45.5V0H0z" />
+    </svg>
+  </div>
+
+  <!--7.Pricing ==================================== -->
+  <div id="pricing" class="block-17 px-4 space-between-blocks">
+    <div class="container">
+      <div class="block-17__header col-lg-8 col-xl-7 mx-auto text-center px-0 mb-5">
+        <h1 class="block__title mb-3">
+          SAVE MONEY AND TAKE YOUR BUSINESS TO THE NEXT LEVEL
+        </h1>
+        <p class="block__paragraph">
+          For a very low, one time investment you can keep creating unlimited amount of landing pages for your projects.
+        </p>
+      </div>
+      <div class="block-17__card row flex-column-reverse flex-lg-row justify-content-center">
+        <div class="testimonial-card-3 text-center col-lg-5 px-0 d-flex align-items-center justify-content-center">
+          <div class="px-4 px-lg-5">
+            <img class="person__avatar" src="./preview/images/mcapodici.jpg">
+            <p class="testimonial-card-3__paragraph my-4">
+              Frontendor allowed me to quickly transform my site tryjobalerts.com from a very basic to a modern
+              professional look ready
+              for 2020, without needing a designer. The amount of block options is amazing, and the simplicity of the
+              method of adding
+              blocks means it's a joy to use.
+            </p>
+            <div class="flex-grow-1 d-flex flex-column mb-3">
+              <span class="person__name">Martin Capodici</span>
+              <a href="https://twitter.com/mcapodici" target="__blank" class="person__info my-1">@mcapodici</a>
+              <span class="person__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <span class="testimonial-card-3__quote-symbol">
+            <i class="fas fa-quote-left"></i>
+          </span>
+        </div>
+        <div class="cta-card col-lg-5 px-0 position-relative">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">FULL PACKAGE</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$100</span>
+              <span class="discount__percentage mx-2">50% off</span>
+            </p>
+            <p class="plan-card__price my-2">$49</p>
+            <span class="plan-card__duration">money back guarentee</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">4 Templates & 50+ HTML Blocks.</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Unlimited license and updates.</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Free support.</span>
+              </li>
+              <li class="mt-5">
+                <a href="https://gum.co/f50" class="d-block btn btn-primary px-5 mx-auto">
+                  Buy Now
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--8. FAQ ============================================ -->
+
+  <div id="faq" class="block-40 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title">FREQUENTLY ASKED QUESTIONS</h1>
+      </div>
+      <div class="row px-2 justify-content-center">
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              What does "Unlimited Projects" mean?
+            </h4>
+            <p class="content-block__paragraph">
+              Unlike most other services, you don't have to buy a new Frontendor license every time you want to use it
+              on a new
+              project. You can build as many sites as you want without ever having to buy an additional license.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Can I use Frontendor for client projects or my own commercial projects?
+            </h4>
+            <p class="content-block__paragraph">
+              Yes! You can use Frontendor for basically anything.
+              Your license gives you permission to build as many of your own projects or client projects as you like.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              How do I purchase a license for my entire team?
+            </h4>
+            <p class="content-block__paragraph">
+              You don't have to buy a new Frontendor license. You can purchase one license that you can share with your
+              entire team.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Can I sell templates I build with Frontendor?
+            </h4>
+            <p class="content-block__paragraph">
+              No, you cannot use Frontondor to create derivative products like themes, UI kits, page builders, or
+              anything else where
+              you would be repackaging and redistributing our blocks for someone else to use to build their own sites.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              What does " Free Updates" include?
+            </h4>
+            <p class="content-block__paragraph">
+              We're planning to add new blocks regularly over time and all new blocks added will be totally free for
+              existing
+              customers.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              What browsers does Frontendor support?
+            </h4>
+            <p class="content-block__paragraph">
+              Frontendor supports all browsers except the very old versions like Internet Explorer 11.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--9. NEWSLETTER ===================================== -->
+
+  <div class="block-30-parent overflow-hidden">
+    <svg class="svg-shape" style="transform: rotateX(-180deg); margin-bottom: -1px" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1366.3 106.742">
+      <path fill="currentColor"
+        d="M1366.3 40.982q-183.405 50.177-274.4 34.984c-90.992-15.193-181.984-45.58-272.975-35.419-90.993 9.78-181.984 61.058-272.976 65.806S363.967 71.218 272.976 50.612C181.983 30.387 90.991 30.387 45.495 30.387L0 26.33V0h1366.3z"
+        opacity="0.149" />
+      <path fill="currentColor"
+        d="M0 40.982q183.405 50.177 274.4 34.984c90.992-15.193 181.984-45.58 272.975-35.419 90.993 9.78 181.984 61.058 272.976 65.806s181.984-35.135 272.975-55.741c90.992-20.226 181.984-20.226 227.48-20.226h45.5V0H0z"
+        opacity="0.296" />
+      <path fill="currentColor"
+        d="M0 27.041q183.405 33.124 274.4 23.1c90.989-10.031 181.981-30.086 272.972-23.379 90.993 6.454 181.984 40.3 272.976 43.431S1002.332 47 1093.324 33.4c90.992-13.35 181.984-13.35 227.48-13.35h45.5V0H0z" />
+    </svg>
+    <div class="block-30 space-between-blocks">
+      <div class="container">
+        <div class="row px-2 justify-content-center">
+          <div class="col-lg-6 px-4 px-xl-5 text-center">
+            <h4 class="block-30__title mb-3">
+              WE INVITE YOU TO
+              OUR JOURNEY! 👋
+            </h4>
+            <p class="block-30__paragraph">
+              Get update emails from us of any new HTML blocks, templates and more interesting stuff!
+            </p>
+            <form onsubmit="sTE(event)" class="cta-input mt-4 mb-2">
+              <input type="email" class="cta-input__input flex-grow-1" placeholder="Email">
+              <button class="cta-input__btn">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--10. Footer ======================================== -->
+
+  <div id="footer" class="block-44 py-5">
+    <div class="container">
+      <div class="row px-0 mx-0 justify-content-center align-items-center">
+        <div class="block-44__logo-container">
+          <img class="block-44__logo" src="./media/logo-white.svg">
+        </div>
+        <ul class="block-44__list list-unstyled justify-content-center mb-0">
+          <li class="block-44__li-1 mx-0">
+            <a href="/preview" class="block-44__link">Preview Page</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#features" class="block-44__link">Features</a>
+          </li>
+          <li class="block-44__li-1">
+            <a href="#pricing" class="block-44__link">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="block-44__divider">
+    <div class="container">
+      <div class="row flex-column flex-md-row px-2 justify-content-center">
+        <div class="flex-grow-1">
+          <ul class="block-44__extra-links d-flex list-unstyled p-0">
+            <li class="mx-2">
+              <a href="https://twitter.com/Frontendor_" target="__blank" class="block-44__link m-0">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="mailto:frontendorstudio@gmail.com" class="block-44__link m-0">
+                <i class="fas fa-envelope"></i>
+                <span class="mx-2">frontendorstudio@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block-41__copyrights">© 2020 Frontendor</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview =========================================== -->
+  <div class="responsive-preview">
+    <ul class="responsive-preview__panel list-unstyled">
+      <li class="responsive-preview__panel-item">
+        <button onclick="setMobileView()" class="responsive-preview__panel-btn">
+          <svg class="bi bi-phone" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M11 1H5a1 1 0 00-1 1v12a1 1 0 001 1h6a1 1 0 001-1V2a1 1 0 00-1-1zM5 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V2a2 2 0 00-2-2H5z"
+              clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M8 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </li>
+      <li class="responsive-preview__panel-item">
+        <button onclick="setLaptopView()" class="responsive-preview__panel-btn">
+          <svg class="bi bi-laptop" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M13.5 3h-11a.5.5 0 00-.5.5V11h12V3.5a.5.5 0 00-.5-.5zm-11-1A1.5 1.5 0 001 3.5V12h14V3.5A1.5 1.5 0 0013.5 2h-11z"
+              clip-rule="evenodd" />
+            <path d="M0 12h16v.5a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 010 12.5V12z" />
+          </svg>
+        </button>
+      </li>
+      <li class="responsive-preview__panel-item" data-toggle="tooltip" data-placement="top" title="Close this window">
+        <button onclick="closePreview()" class="responsive-preview__panel-btn">
+          <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+              clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <div class="responsive-preview__iframe-container">
+      <iframe id="previewIframe" src="" class="responsive-preview__iframe"></iframe>
+    </div>
+  </div>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+  <script src="./app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+  <script>
+    const lazyLoadInstance = new LazyLoad({
+      elements_selector: "img[data-src], .lazy-load-bg"
+    })
+  </script>
+</body>
+
+</html>
