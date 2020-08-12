@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  outputDir: '/dist/blog',
   siteName: 'Frontendor Blog',
   siteDescription: 'We write about marketing, sales, side projects and entrepreneurship for developers and tech people.',
 
