@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Hotjar Tracking Code for https://frontendor.com -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1836985, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117769569-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117769569-1');
+  </script>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#6142df">
+  <meta name="msapplication-TileColor" content="#6142df">
+  <meta name="theme-color" content="#6142df">
+
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./all-blocks.css">
+
+  <!-- Primary Meta Tags -->
+  <title>Frontendor | UI Library For Landing Pages</title>
+  <meta name="title" content="Frontendor | UI Library For Landing Pages">
+  <meta name="description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frontendor.com">
+  <meta property="og:title" content="Frontendor | UI Library For Landing Pages">
+  <meta property="og:description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+  <meta property="og:image" content="/images/BKK.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://frontendor.com">
+  <meta property="twitter:title" content="Frontendor | UI Library For Landing Pages">
+  <meta property="twitter:description"
+    content="Reusable HTML templates and blocks to help you build beautiful and professional landing pages quickly and easily by COPY-PASTE">
+  <meta property="twitter:image" content="/images/BKK.png">
+</head>
+
+<body>
+
+  <!--Offer Alert ================================ -->
+  <div class="offer-alert">
+    <div class="offer-alert__container container">
+      <span tabindex="1" role="button" onclick="showPopup()" class="offer-alert__btn">Buy Now 49$</span>
+      <span>200 spots left at this price <span style="text-decoration: line-through;">100$</span></span>
+    </div>
+  </div>
+
+  <!-- Hero ====================================== -->
+  <header class="hero container-fluid position-relative">
+    <nav class="hero-nav position-relative container mx-auto px-0">
+      <ul class="nav w-100 list-unstyled align-items-center p-0">
+        <li class="hero-nav__item">
+          <img class="hero-nav__logo" src="./images/logo-white.svg" alt="our logo">
+        </li>
+        <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+            <!-- YOU CAN UNCOMMENT THIS -->
+            <!--<li class="hero-nav__item">
+                  <a href="#!" class="hero-nav__link">Product</a>
+                </li> -->
+            <li class="flex-grow-1">
+              <ul class="nav nav--lg-side flex-column-reverse flex-lg-row-reverse list-unstyled align-items-center p-0">
+                <li class="hero-nav__item">
+                  <a href="mailto:frontendorstudio@gmail.com" target="__blank" class="hero-nav__link">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="https://twitter.com/Frontendor_" target="__blank" class="hero-nav__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="/#faq" class="hero-nav__link">FAQ</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="/#features" class="hero-nav__link">Features</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="ft-menu__close-btn animated">
+            <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </li>
+        <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="text-center px-2">
+            <i class="fas fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero__content pt-2 pb-5 container px-0 flex-grow-1 mx-auto">
+      <div class="col-lg-5 px-0 mx-auto">
+        <div class="text-center d-flex flex-column align-items-center">
+          <p class="testimonial-card-3__paragraph my-4">
+            "I checked Frontendor and instantly loved it! Clean design, easy to use blocks as well as an overview that
+            can help you
+            pick the ones you require to get the job done. Would definitely recommend it."
+          </p>
+          <div class="flex-grow-1 d-flex align-items-start mb-3">
+            <img class="person__avatar" src="./images/XavierGeerinck.jpg">
+            <div class="px-3 d-flex flex-column align-items-start">
+              <span class="person__name">Xavier Geerinck</span>
+              <a href="https://twitter.com/XavierGeerinck" target="__blank"
+                class="person__info my-1">@XavierGeerinck</a>
+              <span class="person__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ************************************ -->
+  <div class="content mb-5" data-sticky-container>
+    <div id="blocks-app" class="container row px-0 mx-auto">
+      <!-- Categories Section ========== mobile only ==================== -->
+      <div class="d-lg-none">
+        <button v-show="!showTemplates" class="categories-mb-menu__open-btn"
+          onclick="document.querySelector('#categories-mb-menu').classList.toggle('ft-menu--js-show')">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-ol" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z">
+            </path>
+            <path
+              d="M1.713 11.865v-.474H2c.217 0 .363-.137.363-.317 0-.185-.158-.31-.361-.31-.223 0-.367.152-.373.31h-.59c.016-.467.373-.787.986-.787.588-.002.954.291.957.703a.595.595 0 0 1-.492.594v.033a.615.615 0 0 1 .569.631c.003.533-.502.8-1.051.8-.656 0-1-.37-1.008-.794h.582c.008.178.186.306.422.309.254 0 .424-.145.422-.35-.002-.195-.155-.348-.414-.348h-.3zm-.004-4.699h-.604v-.035c0-.408.295-.844.958-.844.583 0 .96.326.96.756 0 .389-.257.617-.476.848l-.537.572v.03h1.054V9H1.143v-.395l.957-.99c.138-.142.293-.304.293-.508 0-.18-.147-.32-.342-.32a.33.33 0 0 0-.342.338v.041zM2.564 5h-.635V2.924h-.031l-.598.42v-.567l.629-.443h.635V5z">
+            </path>
+          </svg>
+        </button>
+        <div id="categories-mb-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <ul
+            class="hero__menu-content bg-white nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+            <li class="flex-grow-1">
+              <ul class="menu__ul list-unstyled px-4 py-3">
+                <li onclick="goToSection(event, 'hero')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Hero Sections</span>
+                  <span class="menu__li-number">{{ countBlocks('hero') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'cta')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Call To Actions</span>
+                  <span class="menu__li-number">{{ countBlocks('cta') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'features')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Features & Content</span>
+                  <span class="menu__li-number">{{ countBlocks('features') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'pricing')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Pricing Tables</span>
+                  <span class="menu__li-number">{{ countBlocks('pricing') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'blog')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Blog Sections</span>
+                  <span class="menu__li-number">{{ countBlocks('blog') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'testimonials')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Testimonials</span>
+                  <span class="menu__li-number">{{ countBlocks('testimonials') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'stats')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Stats & Numbers</span>
+                  <span class="menu__li-number">{{ countBlocks('stats') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'brands')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Brands & Logos</span>
+                  <span class="menu__li-number">{{ countBlocks('brands') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'faq')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">FAQ</span>
+                  <span class="menu__li-number">{{ countBlocks('faq') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'contact')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Contact</span>
+                  <span class="menu__li-number">{{ countBlocks('contact') }}</span>
+                </li>
+                <li onclick="goToSection(event, 'footer')" class="menu__li d-flex align-items-center">
+                  <span class="flex-grow-1">Footer</span>
+                  <span class="menu__li-number">{{ countBlocks('footer') }}</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="document.querySelector('#categories-mb-menu').classList.toggle('ft-menu--js-show')"
+            class="ft-menu__close-btn animated">
+            <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Categories Section ========== shown on desktop only ==========  -->
+      <div class="d-none d-lg-block col-lg-3">
+        <div class="menu sticky" data-margin-top="-13px">
+          <div v-show="!showTemplates" style="padding: 1.9rem 1.5rem; opacity: .8" class="blocks__header border-bottom">
+            <h2 class="section-title">Categories</h2>
+          </div>
+          <ul v-show="!showTemplates" class="menu__ul list-unstyled px-4 py-3">
+            <li onclick="goToSection(event, 'hero')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Hero Sections</span>
+              <span class="menu__li-number">{{ countBlocks('hero') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'cta')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Call To Actions</span>
+              <span class="menu__li-number">{{ countBlocks('cta') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'features')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Features & Content</span>
+              <span class="menu__li-number">{{ countBlocks('features') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'pricing')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Pricing Tables</span>
+              <span class="menu__li-number">{{ countBlocks('pricing') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'blog')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Blog Sections</span>
+              <span class="menu__li-number">{{ countBlocks('blog') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'testimonials')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Testimonials</span>
+              <span class="menu__li-number">{{ countBlocks('testimonials') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'stats')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Stats & Numbers</span>
+              <span class="menu__li-number">{{ countBlocks('stats') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'brands')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Brands & Logos</span>
+              <span class="menu__li-number">{{ countBlocks('brands') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'faq')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">FAQ</span>
+              <span class="menu__li-number">{{ countBlocks('faq') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'contact')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Contact</span>
+              <span class="menu__li-number">{{ countBlocks('contact') }}</span>
+            </li>
+            <li onclick="goToSection(event, 'footer')" class="menu__li d-flex align-items-center">
+              <span class="flex-grow-1">Footer</span>
+              <span class="menu__li-number">{{ countBlocks('footer') }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="blocks">
+          <div class="blocks__header border-bottom p-4">
+            <h2 class="section-title text-center">
+              <div class="plan-switch">
+                <span
+                  :class="!showTemplates ? 'plan-switch__type plan-switch__type--selected' : 'plan-switch__type'">BLOCKS</span>
+                <span class="switch mx-3">
+                  <input @change="showTemplates = !showTemplates" type="checkbox" class="switch" id="switch-normal">
+                  <label for="switch-normal" class="m-0"></label>
+                </span>
+                <span
+                  :class="showTemplates ? 'plan-switch__type plan-switch__type--selected' : 'plan-switch__type'">TEMPLATES</span>
+              </div>
+            </h2>
+          </div>
+          <div v-show="!showTemplates">
+            <div v-for="group in groupsToShow" :id="group.id" class="row p-4">
+              <div class="col-12">
+                <h6 class="group-title">
+                  <span class="flex-grow-1">{{ group.name }}</span>
+                  <!-- <a href="#" class="btn btn-sm btn-secondary px-4 text-uppercase">download all</a> -->
+                </h6>
+              </div>
+              <div v-for="block in group.blocks" class="col-lg-6 mb-3">
+                <div @click="openPreview(block.pageURL)" class="preview-block">
+                  <span v-if="block.pageURL === false" class="preview-block__premium-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 194 194">
+                      <g id="Groupe_855" data-name="Groupe 855" transform="translate(-19761 -4375)">
+                        <g id="Rectangle_781" data-name="Rectangle 781" transform="translate(19761 4375)" fill="#fff"
+                          stroke="#e5e7eb" stroke-width="3" opacity="0.996">
+                          <rect width="194" height="194" rx="17" stroke="none" />
+                          <rect x="1.5" y="1.5" width="191" height="191" rx="15.5" fill="none" />
+                        </g>
+                        <g id="superado-limite-de-descargas-usuario" transform="translate(19795.492 4411.808)">
+                          <g id="Group-5" transform="translate(0 0)">
+                            <g id="corona" transform="translate(0 0)">
+                              <rect id="Rectangle-29" width="101.421" height="23.53"
+                                transform="translate(13.111 96.812)" fill="#fa8c00" />
+                              <path id="Path-3" d="M1.377,78.212,52.362.061,104.27,78.212Z"
+                                transform="translate(10.386 -0.061)" fill="#ff8c00" fill-rule="evenodd" />
+                              <path id="Path-4" d="M91.893,71.485,103.76,2.47,2.822,68.757Z"
+                                transform="translate(22.013 19.312)" fill="#eda500" fill-rule="evenodd" />
+                              <path id="Path-5" d="M11.459,71.371.075,2.433,94.353,71.371Z"
+                                transform="translate(-0.075 19.009)" fill="#fec400" fill-rule="evenodd" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <img class="preview-block__img" :src="block.img">
+                  <!-- <p class="preview-block__name">{{ block.name }}</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="text-center px-4 py-3 border-top">
+              <button @click="viewMore" class="btn btn-sm btn-primary px-4 text-uppercase">
+                view more
+              </button>
+            </div>
+          </div>
+          <div v-show="showTemplates">
+            <div v-for="group in templatesGroups" :id="group.id" class="row p-4">
+              <div class="col-12">
+                <h6 class="group-title">
+                  <span class="flex-grow-1">{{ group.name }}</span>
+                  <!-- <a href="#" class="btn btn-sm btn-secondary px-4 text-uppercase">download all</a> -->
+                </h6>
+              </div>
+              <div v-for="template in group.templates" class="col-lg-6 mb-3">
+                <div @click="openPreview(template.pageURL)" class="preview-block">
+                  <img class="preview-block__img" :src="template.img">
+                  <!-- <p class="preview-block__name">{{ template.name }}</p> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="text-center px-4 py-3 border-top">
+              <button @click="viewMore" class="btn btn-sm btn-primary px-4 text-uppercase">
+                view more
+              </button>
+            </div> -->
+          </div>
+
+          <!-- Preview =========================================== -->
+          <div class="responsive-preview">
+            <ul class="responsive-preview__panel list-unstyled">
+              <li class="responsive-preview__panel-item">
+                <button @click="setMobileView()" class="responsive-preview__panel-btn">
+                  <svg class="bi bi-phone" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M11 1H5a1 1 0 00-1 1v12a1 1 0 001 1h6a1 1 0 001-1V2a1 1 0 00-1-1zM5 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V2a2 2 0 00-2-2H5z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd" d="M8 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </li>
+              <li class="responsive-preview__panel-item">
+                <button @click="setLaptopView()" class="responsive-preview__panel-btn">
+                  <svg class="bi bi-laptop" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M13.5 3h-11a.5.5 0 00-.5.5V11h12V3.5a.5.5 0 00-.5-.5zm-11-1A1.5 1.5 0 001 3.5V12h14V3.5A1.5 1.5 0 0013.5 2h-11z"
+                      clip-rule="evenodd" />
+                    <path d="M0 12h16v.5a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 010 12.5V12z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="responsive-preview__panel-item" data-toggle="tooltip" data-placement="top"
+                title="Close this window">
+                <button @click="closePreview()" class="responsive-preview__panel-btn">
+                  <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                      d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="responsive-preview__iframe-container">
+              <iframe id="previewIframe" src="" class="responsive-preview__iframe"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Table ----------------------------- -->
+  <div class="popup">
+    <div class="container">
+      <div class="block-17__card row flex-column-reverse flex-lg-row justify-content-center">
+        <div class="testimonial-card-3 text-center col-lg-5 px-0 d-flex align-items-center justify-content-center">
+          <div class="px-4 px-lg-5">
+            <img class="person__avatar" src="./images/mcapodici.jpg">
+            <p class="testimonial-card-3__paragraph my-4">
+              Frontendor allowed me to quickly transform my site tryjobalerts.com from a very basic to a modern
+              professional look ready
+              for 2020, without needing a designer. The amount of block options is amazing, and the simplicity of the
+              method of adding
+              blocks means it's a joy to use.
+            </p>
+            <div class="flex-grow-1 d-flex flex-column mb-3">
+              <span class="person__name">Martin Capodici</span>
+              <a href="https://twitter.com/mcapodici" target="__blank" class="person__info my-1">@mcapodici</a>
+              <span class="person__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <span class="testimonial-card-3__quote-symbol">
+            <i class="fas fa-quote-left"></i>
+          </span>
+        </div>
+        <div class="cta-card col-lg-5 px-0 position-relative">
+          <button onclick="closePopup()" class="popup__close-btn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+            </svg>
+          </button>
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">FULL PACKAGE</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$100</span>
+              <span class="discount__percentage mx-2">50% off</span>
+            </p>
+            <p class="plan-card__price my-2">$49</p>
+            <span class="plan-card__duration">money back guarentee</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">4 Templates & 50+ HTML Blocks.</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Unlimited license and updates.</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Free support.</span>
+              </li>
+              <li class="mt-5">
+                <a href="https://gum.co/f50" class="d-block btn btn-primary px-5 mx-auto">
+                  Buy Now
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOADING PAGE -->
+  <!-- THIS WILL BE SHOWN BY DEFAULT, AND HIDDEN ONCE Vue.js IS READY -->
+  <div page-is-loading class="page-is-loading">
+    <div class="page-is-loading__loader">
+      <img class="page-is-loading__logo" src="./images/logo.svg" alt="logo">
+      <div class="page-is-loading__spinner mt-4"></div>
+    </div>
+  </div>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="./all-blocks.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js"></script>
+
+  <script>
+    new Sticky('.sticky')
+  </script>
+
+  <script>
+    const lazyLoadInstance = new LazyLoad({
+      elements_selector: "img[data-src], .lazy-load-bg"
+    })
+  </script>
+
+</body>
+
+</html>

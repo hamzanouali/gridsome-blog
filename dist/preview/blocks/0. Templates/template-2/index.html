@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./app.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video-js.min.css" rel="stylesheet" />
+  <script>
+    /* Disable VideoJS tracking */
+    window.HELP_IMPROVE_VIDEOJS = false;
+  </script>
+
+  <title>Frontendor | Component</title>
+</head>
+
+<body>
+
+  <!-- 1. Hero =================================== -->
+  <div class="hero-with-shape overflow-hidden">
+    <header class="hero container-fluid">
+      <nav class="hero-nav container px-sm-0 mx-auto">
+        <ul class="nav w-100 list-unstyled align-items-center px-2 px-lg-0">
+          <li class="hero-nav__item">
+            <img class="hero-nav__logo" src="./media/logo.svg">
+          </li>
+          <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+            <ul
+              class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+              <li class="hero-nav__item">
+                <a href="#how-it-works" class="hero-nav__link">How It Works</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#features" class="hero-nav__link">Features</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#reviews" class="hero-nav__link">Reviews</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#pricing" class="hero-nav__link">Pricing</a>
+              </li>
+              <li class="hero-nav__item">
+                <a href="#faq" class="hero-nav__link">FAQ</a>
+              </li>
+              <li class="flex-grow-1">
+                <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
+                  <li class="hero-nav__item">
+                    <a href="#!" class="btn btn-primary">Try Free</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="ft-menu__close-btn animated">
+              <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </li>
+          <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="text-center px-2">
+              <i class="fas fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero__content container mx-auto">
+        <div class="col-lg-7 px-0">
+          <h1 class="hero__title mb-3">
+            An effortless way to collect payments for your <span class="highlight">business</span>.
+          </h1>
+          <p class="hero__paragraph mb-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard
+          </p>
+          <div class="col-lg-10 col-xl-8 mx-0 p-0">
+            <form onsubmit="submitForm(event)" class="cta-input w-100 mb-2">
+              <input type="email" class="cta-input__input flex-grow-1" placeholder="Email">
+              <button class="cta-input__btn">Get Started</button>
+            </form>
+            <p class="cta-p">Free Trial 14 Days. No Credit Card Required</p>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0 px-0 mx-0">
+          <video id="my-video" class="video-js" controls preload="auto" width="100%" poster="./media/imgxx.jpg"
+            data-setup="{}">
+            <source src="./media/mov_bbb.mp4" type="video/mp4">
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+          </video>
+        </div>
+      </div>
+    </header>
+    <svg class="svg-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1365.434 106.021">
+      <path fill="currentColor"
+        d="M0 28.865l45.514 13.94c45.514 14.2 136.543 41.688 227.572 27.944S455.145.724 546.173.92C637.2.724 728.231 57.006 819.26 63.748c91.029 7 182.058-34.883 273.087-38.351 91.029-3.73 182.058 31.61 227.572 48.821l45.515 17.474v15.248H0z"
+        transform="rotate(180 682.717 53.47)" />
+    </svg>
+  </div>
+
+  <!--2. How It Works ============================ -->
+  <div id="how-it-works" class="steps-block container-fluid space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <p class="block__pre-title mb-2">it takes 5 min</p>
+        <h1 class="block__title mb-3">How It Works?</h1>
+      </div>
+      <div class="row align-items-start justify-content-center">
+        <div class="the-step col-md-6 col-lg-4">
+          <div class="the-step__symbol-container">
+            <span class="the-step__symbol">
+              01
+            </span>
+          </div>
+          <div class="the-step__content">
+            <h4 class="the-step__title">
+              No Need To Sign Up
+            </h4>
+            <p class="the-step__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard.
+            </p>
+          </div>
+        </div>
+        <div class="the-step col-md-6 col-lg-4">
+          <div class="the-step__symbol-container">
+            <span class="the-step__symbol">
+              02
+            </span>
+          </div>
+          <div class="the-step__content">
+            <h4 class="the-step__title">
+              Enter Your Website's Link
+            </h4>
+            <p class="the-step__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard.
+            </p>
+          </div>
+        </div>
+        <div class="the-step col-md-6 col-lg-4">
+          <div class="the-step__symbol-container">
+            <span class="the-step__symbol">
+              03
+            </span>
+          </div>
+          <div class="the-step__content">
+            <h4 class="the-step__title">
+              Get Your Reports
+            </h4>
+            <p class="the-step__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--3. Features ================================ -->
+  <div id="features" class="features-block-with-shape overflow-hidden">
+    <svg class="svg-shape" style="transform: rotate(-180deg); margin-bottom: -1px" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1367 106.797">
+      <path fill="currentColor" fill-rule="evenodd" d="M0 0h1367v.712L0 106.8z"></path>
+    </svg>
+    <div class="features-block container-fluid space-between-blocks">
+      <div class="container">
+        <!-- HEADER -->
+        <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+          <p class="block__pre-title mb-2">YOUR SUB HEADLINE</p>
+          <h1 class="block__title mb-3">Why You Should Choose Us</h1>
+        </div>
+        <div class="row">
+          <div class="feature col-lg-6">
+            <div class="feature__icon-container">
+              <span class="feature__icon">
+                <i class="fas fa-globe"></i>
+              </span>
+            </div>
+            <div class="feature__content">
+              <h4 class="feature__title">
+                Put Your Sub-Headline Here
+              </h4>
+              <p class="feature__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.
+              </p>
+            </div>
+          </div>
+          <div class="feature col-lg-6">
+            <div class="feature__icon-container">
+              <span class="feature__icon">
+                <i class="fas fa-clone"></i>
+              </span>
+            </div>
+            <div class="feature__content">
+              <h4 class="feature__title">
+                Put Your Sub-Headline Here
+              </h4>
+              <p class="feature__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature col-lg-6">
+            <div class="feature__icon-container">
+              <span class="feature__icon">
+                <i class="fas fa-dice-d6"></i>
+              </span>
+            </div>
+            <div class="feature__content">
+              <h4 class="feature__title">
+                Put Your Sub-Headline Here
+              </h4>
+              <p class="feature__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.
+              </p>
+            </div>
+          </div>
+          <div class="feature col-lg-6">
+            <div class="feature__icon-container">
+              <span class="feature__icon">
+                <i class="fas fa-bookmark"></i>
+              </span>
+            </div>
+            <div class="feature__content">
+              <h4 class="feature__title">
+                Put Your Sub-Headline Here
+              </h4>
+              <p class="feature__paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="svg-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1367 106.797">
+      <path fill="currentColor" fill-rule="evenodd" d="M0 0h1367v.712L0 106.8z"></path>
+    </svg>
+  </div>
+
+  <!--4. Testimonials ============================= -->
+  <div id="reviews" class="block-19 space-between-blocks">
+    <div class="container">
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">What Buyers Says About Us</h1>
+        <p class="block__paragraph">
+          You’ll get access to the first 50+ blocks, plus new components every month until we’re out of ideas.
+        </p>
+      </div>
+      <div class="row px-2 pt-4">
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially
+              unchanged.
+            </p>
+            <div class="person">
+              <div>
+                <img class="person__avatar" src="https://randomuser.me/api/portraits/men/83.jpg">
+              </div>
+              <div class="px-2"></div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="person__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="person__name my-1">Ali Boukeroui</span>
+                <span class="person__info">indiehackers.com</span>
+              </div>
+            </div>
+            <span class="testimonial-card-1__quote-symbol">
+              <i class="fas fa-quote-left"></i>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially
+              unchanged.
+            </p>
+            <div class="person">
+              <div>
+                <img class="person__avatar" src="https://randomuser.me/api/portraits/men/83.jpg">
+              </div>
+              <div class="px-2"></div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="person__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="person__name my-1">Ali Boukeroui</span>
+                <span class="person__info">indiehackers.com</span>
+              </div>
+            </div>
+            <span class="testimonial-card-1__quote-symbol">
+              <i class="fas fa-quote-left"></i>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card-1 mb-5">
+            <p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially
+              unchanged.
+            </p>
+            <div class="person">
+              <div>
+                <img class="person__avatar" src="https://randomuser.me/api/portraits/men/83.jpg">
+              </div>
+              <div class="px-2"></div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="person__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="person__name my-1">Ali Boukeroui</span>
+                <span class="person__info">indiehackers.com</span>
+              </div>
+            </div>
+            <span class="testimonial-card-1__quote-symbol">
+              <i class="fas fa-quote-left"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--5. Pricing Table ========================== -->
+  <div id="pricing" class="block-16 px-1 space-between-blocks">
+    <div class="container text-center">
+      <div class="block-16__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">PRICING</h1>
+        <p class="block__paragraph">
+          You’ll get access to the first 50+ blocks, plus new components every month until we’re out of ideas.
+        </p>
+        <div class="mb-5 plan-switch">
+          <span class="plan-switch__type plan-switch__type--selected">MONTHLY</span>
+          <span class="switch mx-3">
+            <input type="checkbox" class="switch" id="switch-normal">
+            <label for="switch-normal" class="m-0"></label>
+          </span>
+          <span class="plan-switch__type">YEARLY</span>
+        </div>
+      </div>
+      <div class="row px-3 justify-content-center">
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">Solo</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$100</span>
+              <span class="discount__percentage mx-2">51% off</span>
+            </p>
+            <p class="plan-card__price my-2">$49</p>
+            <span class="plan-card__duration">/month</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">Unlimited downloads</span>
+              </li>
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">10GB bandwith</span>
+              </li>
+              <li class="plan-features__li plan-features__li--disabled">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">2 accounts</span>
+              </li>
+              <li class="plan-features__li plan-features__li--disabled">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">Free support</span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card plan-card--recommended text-center">
+            <span class="plan-card__tag">RECOMMENDED</span>
+            <h6 class="plan-card__name mb-0">Growing</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$300</span>
+              <span class="discount__percentage mx-2">50% off</span>
+            </p>
+            <p class="plan-card__price my-2">$249</p>
+            <span class="plan-card__duration">/month</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">Unlimited downloads</span>
+              </li>
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">10GB bandwith</span>
+              </li>
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">2 accounts</span>
+              </li>
+              <li class="plan-features__li plan-features__li--disabled">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">Free support</span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">Start</h6>
+            <p class="discount mt-3 mb-0 d-flex align-items-center justify-content-center">
+              <span class="discount__old-price mx-2">$120</span>
+              <span class="discount__percentage mx-2">17% off</span>
+            </p>
+            <p class="plan-card__price my-2">$99</p>
+            <span class="plan-card__duration">/month</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">Unlimited downloads</span>
+              </li>
+              <li class="plan-features__li">
+                <span>
+                  <i class="plan-features__icon fas fa-check mx-1"></i>
+                </span>
+                <span class="plan-features__li-text mx-1">10GB bandwith</span>
+              </li>
+              <li class="plan-features__li">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">2 accounts</span>
+              </li>
+              <li class="plan-features__li">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">Free support</span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--6. FAQ =================================== -->
+  <div id="FAQ" class="block-40 container space-between-blocks">
+    <!-- HEADER -->
+    <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+      <h1 class="block__title">Frequently Asked Questions</h1>
+    </div>
+    <div class="row px-2 justify-content-center">
+      <div class="col-lg-8">
+        <div class="content-block">
+          <h4 class="content-block__title">
+            What caused that horrible financial crisis in 2008?
+          </h4>
+          <p class="content-block__paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="content-block">
+          <h4 class="content-block__title">
+            Why does Southwest only fly 737’s?
+          </h4>
+          <p class="content-block__paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="content-block">
+          <h4 class="content-block__title">
+            How are interest rates adjusted?
+          </h4>
+          <p class="content-block__paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="content-block">
+          <h4 class="content-block__title">
+            What’s up with the IMF bailing out all of these countries?
+          </h4>
+          <p class="content-block__paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--7. CTA =================================== -->
+  <div class="block-18 px-3 space-between-blocks">
+    <div class="container">
+      <div class="block-18__card row">
+        <div
+          class="testimonial-card-3 text-center col-lg-6 d-flex align-items-center justify-content-center mb-5 mb-lg-0">
+          <div>
+            <img class="person__avatar" src="./media/profile-2.png">
+            <p class="testimonial-card-3__paragraph my-4">
+              Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the
+              industry’s standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <div class="flex-grow-1 d-flex flex-column mb-3">
+              <span class="person__name">Ali Boukeroui</span>
+              <span class="person__info my-1">indiehackers.com</span>
+              <span class="person__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <span class="testimonial-card-3__quote-symbol">
+            <i class="fas fa-quote-left"></i>
+          </span>
+        </div>
+        <div class="cta-card col-lg-6">
+          <p class="cta-card__pre-title mb-2">PUT YOUR SUB HEADLINE HERE</p>
+          <h1 class="cta-card__title mb-3">Start Connecting Your Business To One Place</h1>
+          <div class="mt-5">
+            <a href="#!" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--8. Footer ================================ -->
+  <div class="block-43 text-center py-5">
+    <div class="container">
+      <ul class="block-43__list list-unstyled justify-content-center mb-4">
+        <li class="block-43__li-1">
+          <a href="#!" class="block-43__link">Affiliate</a>
+        </li>
+        <li class="block-43__li-1">
+          <a href="#!" class="block-43__link">Entreprise</a>
+        </li>
+        <li class="block-43__li-1">
+          <a href="#!" class="block-43__link">Products</a>
+        </li>
+        <li class="block-43__li-1">
+          <a href="#!" class="block-43__link">Account</a>
+        </li>
+      </ul>
+      <ul class="d-flex justify-content-center list-unstyled p-0">
+        <li class="mx-2">
+          <a href="#!" class="block-43__link m-0">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="mx-2">
+          <a href="#!" class="block-43__link m-0">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="mx-2">
+          <a href="#!" class="block-43__link m-0">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="block-43__copyrights">© 2020 YourBrandName.</p>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/video.js@7.5.0/dist/video.min.js"></script>
+</body>
+
+</html>

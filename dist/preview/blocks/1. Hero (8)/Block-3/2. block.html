@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../dist/root.css">
+  <link rel="stylesheet" href="./2. block.css">
+
+  <title>Frontendor | Component</title>
+</head>
+
+<body>
+
+  <div class="hero-with-shape overflow-hidden">
+    <header class="hero container-fluid">
+      <div class="hero__content container mx-auto">
+        <nav class="hero-nav container px-0 mx-auto">
+          <ul class="nav w-100 list-unstyled align-items-center p-0">
+            <li class="hero-nav__item">
+              <img class="hero-nav__logo" src="../../dist/images/logo-shape.svg">
+            </li>
+            <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+              <ul
+                class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+                <li class="flex-grow-1">
+                  <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
+                    <li class="hero-nav__item">
+                      <a href="#!" class="hero-nav__link">Product</a>
+                    </li>
+                    <li class="hero-nav__item">
+                      <a href="#!" class="hero-nav__link">Features</a>
+                    </li>
+                    <li class="hero-nav__item">
+                      <a href="#!" class="hero-nav__link">Support</a>
+                    </li>
+                    <li class="hero-nav__item">
+                      <a href="#!" class="hero-nav__link">Pricing</a>
+                    </li>
+                    <!-- <li class="hero-nav__item">
+                      <a href="#!" class="btn btn-primary">Try For Free</a>
+                    </li> -->
+                  </ul>
+                </li>
+              </ul>
+              <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+                class="ft-menu__close-btn animated">
+                <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                    clip-rule="evenodd" />
+                  <path fill-rule="evenodd"
+                    d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </li>
+            <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+              <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+                class="text-center px-2">
+                <i class="fas fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="row hero__body align-items-center">
+          <div class="col-lg-7">
+            <h1 class="hero__title mb-3">
+              An effortless way to collect payments for your <span class="highlight">business</span>.
+            </h1>
+            <p class="hero__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's
+              standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type
+              specimen
+              book
+            </p>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <form class="signup-form" action="#!">
+              <label class="singup-form__label" for="full_name">Full Name</label>
+              <input id="full_name" class="signup-form__input" type="text">
+              <label class="singup-form__label" for="email">Email</label>
+              <input id="email" class="signup-form__input" type="text">
+              <label class="singup-form__label" for="full_name">Brand Name</label>
+              <input id="brand_name" class="signup-form__input" type="text">
+              <button class="btn btn-primary w-100 mt-3">REQUEST DEMO</button>
+              <p class="signup-form__p mt-3 mb-0">Free Trial 14 Days. No Credit Card Required</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <svg class="svg-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.3 106.742">
+      <path fill="currentColor"
+        d="M1366.3 40.982q-183.405 50.177-274.4 34.984c-90.992-15.193-181.984-45.58-272.975-35.419-90.993 9.78-181.984 61.058-272.976 65.806S363.967 71.218 272.976 50.612C181.983 30.387 90.991 30.387 45.495 30.387L0 26.33V0h1366.3z"
+        opacity="0.149" />
+      <path fill="currentColor"
+        d="M0 40.982q183.405 50.177 274.4 34.984c90.992-15.193 181.984-45.58 272.975-35.419 90.993 9.78 181.984 61.058 272.976 65.806s181.984-35.135 272.975-55.741c90.992-20.226 181.984-20.226 227.48-20.226h45.5V0H0z"
+        opacity="0.296" />
+      <path fill="currentColor"
+        d="M0 27.041q183.405 33.124 274.4 23.1c90.989-10.031 181.981-30.086 272.972-23.379 90.993 6.454 181.984 40.3 272.976 43.431S1002.332 47 1093.324 33.4c90.992-13.35 181.984-13.35 227.48-13.35h45.5V0H0z" />
+    </svg>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

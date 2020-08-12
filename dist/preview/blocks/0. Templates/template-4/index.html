@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./app.css">
+
+  <title>Frontendor | Component</title>
+</head>
+
+<body>
+
+  <!--1. Hero =================================== -->
+  <div class="hero overflow-hidden">
+    <header class="container-fluid position-relative">
+      <nav class="hero-nav container mx-auto">
+        <ul class="nav w-100 list-unstyled align-items-center px-lg-0">
+          <li class="hero-nav__item">
+            <img class="hero-nav__logo" src="./media/logo-white.svg" alt="our logo">
+          </li>
+          <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+            <ul
+              class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+              <!-- YOU CAN UNCOMMENT THIS -->
+              <!--<li class="hero-nav__item">
+                      <a href="#!" class="hero-nav__link">Product</a>
+                    </li> -->
+              <li class="flex-grow-1">
+                <ul
+                  class="nav nav--lg-side flex-column-reverse flex-lg-row-reverse list-unstyled align-items-center p-0">
+                  <li class="hero-nav__item">
+                    <a href="https://twitter.com/intent/tweet?text=30%2B%20HTML%20BLOCKS%20TO%20BUILD%20OUTSTANDING%20LANDING%20PAGES&url=https%3A%2F%2Ffrontendor.com%2F"
+                      target="_blank" class="btn btn-primary">
+                      Try For Free
+                    </a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#newsletter" class="hero-nav__link">Newsletter</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#faq" class="hero-nav__link">FAQ</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#pricing" class="hero-nav__link">Pricing</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#reviews" class="hero-nav__link">Reviews</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#stats" class="hero-nav__link">Stats</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#features" class="hero-nav__link">Features</a>
+                  </li>
+                  <li class="hero-nav__item">
+                    <a href="#product" class="hero-nav__link">Product</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="ft-menu__close-btn animated">
+              <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </li>
+          <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+            <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+              class="text-center px-2">
+              <i class="fas fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero__content container flex-grow-1 mx-auto pb-5">
+        <div class="text-center col-lg-8 px-0 mx-auto">
+          <h1 class="hero__title mb-3">
+            An effortless way to collect payments for your <span class="highlight">business</span>.
+          </h1>
+          <p class="hero__paragraph mb-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <div>
+            <a class="btn btn-primary" href="#">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero__screenshot-container pb-5">
+      <div class="svg-background">
+        <div class="svg-background__rectangle"></div>
+        <svg class="svg-background__shape" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto"
+          viewBox="0 0 1364.434 117.967">
+          <g>
+            <path fill="currentColor"
+              d="M0 0v1.329c169.979 71.753 412.72 116.638 682.217 116.638s512.238-44.906 682.217-116.659V0z"
+              data-name="Tracé 2756" />
+          </g>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="hero__img-container col-10 col-lg-8 mx-auto p-0 mt-2">
+          <img src="./media/1.png" class="hero__img w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--2. Features ===================================== -->
+  <div id="product" class="block-7 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <p class="block__pre-title mb-2">PUT YOUR SUB HEADLINE HERE</p>
+        <h1 class="block__title mb-3">
+          Get the most convenient
+          deal for online reading.
+        </h1>
+        <p class="block__paragraph mb-0">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </div>
+      <div class="row px-2 align-items-center flex-lg-row justify-content-center">
+        <!-- IMAGE -->
+        <div class="col-lg-5 my-5 text-center">
+          <img src="./media/2.png" class="w-100">
+        </div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-4">
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-book-open"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Unlimited Magazines</h3>
+              <p class="card-2__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-book"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Unlimited Books</h3>
+              <p class="card-2__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-file-audio"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Unlimited Audio Books</h3>
+              <p class="card-2__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-file-alt"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Unlimited Documents</h3>
+              <p class="card-2__paragraph">
+                Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--3. Features 2 =================================== -->
+  <div id="features" class="block-8 space-between-blocks">
+    <div class="container">
+      <div class="row px-2 align-items-center flex-column-reverse flex-lg-row justify-content-center">
+        <!-- CONTENT -->
+        <div class="col-lg-5">
+          <p class="block__pre-title mb-2">PUT YOUR SUB HEADLINE HERE</p>
+          <h1 class="block__title mb-3">You deserve the best</h1>
+          <p class="block__paragraph mb-0">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry’s
+            standard
+          </p>
+          <ul class="list-unstyled mt-3 p-0">
+            <li class="block-8__li d-flex align-items-center">
+              <span class="block-8__li-icon">
+                <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                  <path fill-rule="evenodd"
+                    d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                </svg>
+              </span>
+              <div class="px-2"></div>
+              <span class="block-8__li-text">Feed your curiosity.</span>
+            </li>
+            <li class="block-8__li d-flex align-items-center">
+              <span class="block-8__li-icon">
+                <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                  <path fill-rule="evenodd"
+                    d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                </svg>
+              </span>
+              <div class="px-2"></div>
+              <span class="block-8__li-text">Stay informed.</span>
+            </li>
+            <li class="block-8__li d-flex align-items-center">
+              <span class="block-8__li-icon">
+                <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                  <path fill-rule="evenodd"
+                    d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                </svg>
+              </span>
+              <div class="px-2"></div>
+              <span class="block-8__li-text">Read anytime, anywhere.</span>
+            </li>
+          </ul>
+        </div>
+        <!-- IMAGE -->
+        <div class="col-lg-5 my-5 my-lg-0 text-center">
+          <img src="./media/3.png" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--4. Stats =============================== -->
+  <div id="stats" class="block-35 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title mb-3">
+          Daily Growing Numbers
+        </h1>
+        <p class="block__paragraph mb-0">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+          standard
+        </p>
+      </div>
+      <ul class="stats row list-unstyled text-center p-0">
+        <li class="stats__li col-sm-6 col-lg-3 p-0">
+          <span class="stats__number">234</span>
+          <p class="stats__text">ONLINE COURSES</p>
+        </li>
+        <li class="stats__li col-sm-6 col-lg-3 p-0">
+          <span class="stats__number">87+</span>
+          <p class="stats__text">EXPERT INSTRUCTION</p>
+        </li>
+        <li class="stats__li col-sm-6 col-lg-3 p-0">
+          <span class="stats__number">200K</span>
+          <p class="stats__text">ACTIVE STUDENT</p>
+        </li>
+        <li class="stats__li col-sm-6 col-lg-3 p-0">
+          <span class="stats__number">126+</span>
+          <p class="stats__text">ONLINE RESOURCES</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--5. Testimonials ============================= -->
+  <div id="reviews" class="block-22 space-between-blocks">
+    <div class="container">
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">What Buyers Says About Us</h1>
+        <p class="block__paragraph">
+          You’ll get access to the first 50+ blocks, plus new components every month until we’re out of ideas.
+        </p>
+      </div>
+      <div class="row px-2">
+        <div class="col-lg-8 mx-auto">
+          <div class="testimonial-card-1 text-center mb-5">
+            <div class="person">
+              <div class="mb-2">
+                <img class="person__avatar" src="./media/profile-2.png">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="person__name my-1">Ali Boukeroui</span>
+                <span class="person__info">indiehackers.com</span>
+              </div>
+            </div>
+            <p class="testimonial-card-1__paragraph mb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially
+              unchanged.
+            </p>
+            <span class="person__rating d-block mb-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="testimonial-card-1__quote-symbol">
+              <i class="fas fa-quote-left"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--6. Pricing Table =========================== -->
+  <div id="pricing" class="block-15 px-1 space-between-blocks">
+    <div class="container text-center">
+      <div class="block-15__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">PRICING</h1>
+        <p class="block__paragraph">
+          You’ll get access to the first 50+ blocks, plus new components every month until we’re out of ideas.
+        </p>
+        <div class="mb-5 plan-switch">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="changePlan(event)"
+              class="btn plan-switch__type plan-switch__type--selected">MONTHLY</button>
+            <button type="button" onclick="changePlan(event)" class="btn plan-switch__type">YEARLY</button>
+          </div>
+        </div>
+      </div>
+      <div class="row px-3 justify-content-center">
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">
+              <!-- JavaScript will put text here -->
+            </h6>
+            <p class="plan-card__price my-2">
+              <!-- JavaScript will put text here -->
+            </p>
+            <span class="plan-card__duration">
+              <!-- JavaScript will put text here -->
+            </span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li id="plan-features__li--placeholder" style="display: none" class="plan-features__li">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">
+                  <!-- JavaScript will put text here -->
+                </span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card plan-card--recommended text-center">
+            <span class="plan-card__tag">RECOMMENDED</span>
+            <h6 class="plan-card__name mb-0">
+              <!-- JavaScript will put text here -->
+            </h6>
+            <p class="plan-card__price my-2">
+              <!-- JavaScript will put text here -->
+            </p>
+            <span class="plan-card__duration">
+              <!-- JavaScript will put text here -->
+            </span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li id="plan-features__li--placeholder" style="display: none" class="plan-features__li">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">
+                  <!-- JavaScript will put text here -->
+                </span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 px-0">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">
+              <!-- JavaScript will put text here -->
+            </h6>
+            <p class="plan-card__price my-2">
+              <!-- JavaScript will put text here -->
+            </p>
+            <span class="plan-card__duration">
+              <!-- JavaScript will put text here -->
+            </span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li id="plan-features__li--placeholder" style="display: none" class="plan-features__li">
+                <span><i class="plan-features__icon fas fa-check mx-1"></i></span>
+                <span class="plan-features__li-text mx-1">
+                  <!-- JavaScript will put text here -->
+                </span>
+              </li>
+            </ul>
+            <div class="mt-5 flex-grow-1 d-flex flex-column-reverse">
+              <a href="#!" class="btn btn-primary px-5 mx-auto">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var plans = [
+      {
+        state1: {
+          duration: '/MONTH',
+          planName: 'Entreprise',
+          oldPrice: '$300',
+          newPrice: '$149',
+          discount: '50% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+          ],
+          action: 'https://domaine.com/signup?duration=monthly&planName=Entreprise'
+        },
+        state2: {
+          duration: '/YEAR',
+          planName: 'Entreprise',
+          oldPrice: '$3600',
+          newPrice: '$1490',
+          discount: '59% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+          ],
+          action: 'https://domaine.com/signup?duration=yearly&planName=Entreprise'
+        }
+      },
+      {
+        state1: {
+          duration: '/MONTH',
+          planName: 'Startup',
+          oldPrice: '$200',
+          newPrice: '$99',
+          discount: '50% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+          ],
+          action: 'https://domaine.com/signup?duration=monthly&planName=Startup'
+        },
+        state2: {
+          duration: '/YEAR',
+          planName: 'Startup',
+          oldPrice: '$2000',
+          newPrice: '$990',
+          discount: '59% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+          ],
+          action: 'https://domaine.com/signup?duration=yearly&planName=Startup'
+        }
+      },
+      {
+        state1: {
+          duration: '/MONTH',
+          planName: 'Solo Founder',
+          oldPrice: '$100',
+          newPrice: '$49',
+          discount: '50% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+          ],
+          action: 'https://domaine.com/signup?duration=monthly&planName=Solo'
+        },
+        state2: {
+          duration: '/YEAR',
+          planName: 'Solo Founder',
+          oldPrice: '$1200',
+          newPrice: '$588',
+          discount: '59% off',
+          features: [
+            { text: 'Unlimited Projects', disabled: false },
+            { text: '10+ Templates', disabled: false },
+            { text: '45+ HTML Blocks', disabled: false },
+            { text: 'Free Ticket For The Summer Event', disabled: false }
+          ],
+          action: 'https://domaine.com/signup?duration=yearly&planName=Solo'
+        }
+      }
+
+    ]
+  </script>
+
+  <!--7. FAQ ==================================== -->
+  <div id="faq" class="block-39 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title">Frequently Asked Questions</h1>
+      </div>
+      <div class="row px-2">
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              What caused that horrible financial crisis in 2008?
+            </h4>
+            <p class="content-block__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Why does Southwest only fly 737’s?
+            </h4>
+            <p class="content-block__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              How are interest rates adjusted?
+            </h4>
+            <p class="content-block__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              What’s up with the IMF bailing out all of these countries?
+            </h4>
+            <p class="content-block__paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry’s standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--8. Newsletter ============================ -->
+  <div id="newsletter" class="block-30 space-between-blocks">
+    <div class="block-30__row d-block d-lg-flex row">
+      <div class="block-30__image-column container col-lg-6"
+        style="background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row flex-row-reverse">
+        <div class="col-lg-6 px-4 px-xl-5 py-5 text-center">
+          <h4 class="block-30__title mb-3">
+            Our Newsletter
+          </h4>
+          <p class="block-30__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <form onsubmit="submitForm(event)" class="cta-input mt-4 mb-2">
+            <input type="email" class="cta-input__input flex-grow-1" placeholder="Email">
+            <button class="cta-input__btn">SUBSCRIBE</button>
+          </form>
+          <p class="cta-p">We protect your data. Read our Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--9. Footer =============================== -->
+  <div class="block-41 py-5">
+    <div class="container">
+      <div class="row px-2">
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+          <img class="block-41__logo mb-3" src="./media/logo-white.svg">
+          <p class="block-41__brand-story mb-0">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard
+            dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
+          <ul class="block-41__links-list list-unstyled p-0">
+            <li class="block-41__li-heading">
+              Product
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Entreprise</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Affiliate</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Contact Sales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
+          <ul class="block-41__links-list list-unstyled p-0">
+            <li class="block-41__li-heading">
+              Product
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Entreprise</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Affiliate</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Contact Sales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
+          <ul class="block-41__links-list list-unstyled p-0">
+            <li class="block-41__li-heading">
+              Product
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Entreprise</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Affiliate</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Contact Sales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 mb-sm-4 mb-lg-0">
+          <ul class="block-41__links-list list-unstyled p-0">
+            <li class="block-41__li-heading">
+              Product
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Entreprise</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Affiliate</a>
+            </li>
+            <li class="block-41__li">
+              <a href="#!" class="block-41__li-link">Contact Sales</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="block-41__divider">
+    <div class="container">
+      <div class="row px-2">
+        <div class="flex-grow-1">
+          <ul class="block-41__extra-links d-flex list-unstyled p-0">
+            <li class="mx-2">
+              <a href="#!" class="block-41__extra-link m-0">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="#!" class="block-41__extra-link m-0">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="#!" class="block-41__extra-link m-0">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block-41__copyrights">© 2020 YourBrandName. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
